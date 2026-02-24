@@ -48,7 +48,7 @@ with st.sidebar:
     budget = st.number_input("Бюджет (руб)", min_value=50000, value=600000, step=50000)
     moto_class = st.selectbox("Класс", ["Naked", "Sport", "Cruiser", "Touring", "Enduro", "Classic"])
     city = st.text_input("Город", value="Москва")
-    model_count = st.slider("Сколько моделей?", 3, 10, 15, 5)
+    model_count = st.slider("Сколько моделей?", 3, 15, 5)
 
 st.title("🏍️ MotoVibe: Подбор и Анализ Рисков")
 
