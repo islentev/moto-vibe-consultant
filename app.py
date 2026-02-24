@@ -17,7 +17,7 @@ client = OpenAI(api_key=DEEPSEEK_KEY, base_url="https://api.deepseek.com")
 
 def get_market_info(query):
     with DDGS() as ddgs:
-        results = [r['body'] for r in ddgs.text(f"купить {query} цены рф 2026", max_results=10)]
+        results = [r['body'] for r in ddgs.text(f"купить {query} цены рф 2026", max_results=15)]
     return "\n".join(results)
 
 def create_docx(text):
